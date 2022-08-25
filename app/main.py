@@ -1,8 +1,10 @@
 from typing import Union
 from fastapi import FastAPI
+from .api import api
 
-api = FastAPI()
 
-@api.get("/")
+app = FastAPI()
+
+app.include_router(api.api_router, prefix="/api", )
 def read_root():
     return {"Hello": "World"}

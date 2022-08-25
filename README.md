@@ -1,1 +1,3 @@
 # BrunnerTilbud
+This project is a POC of the tech stack that we eventually plan to use for brunnerne.dk.
+Work in progress...
